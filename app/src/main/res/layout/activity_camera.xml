@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.b2c.audience.CameraActivity" />
+    </data>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/barcode_scanner"
+        android:name="info.androidhive.barcode.BarcodeReader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:auto_focus="true"
+        app:use_flash="false" />
+
+    <info.androidhive.barcode.ScannerOverlay
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#44000000"
+        app:line_color="#7323DC"
+        app:line_speed="6"
+        app:line_width="4"
+        app:square_height="300"
+        app:square_width="300" />
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/toolbar_bg"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+</RelativeLayout>
+
+
+
+</layout>

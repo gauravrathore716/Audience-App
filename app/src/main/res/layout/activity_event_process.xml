@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.b2c.audience.ActivityEventProcess" />
+    </data>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="304dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:layout_centerInParent="true"
+            tools:listitem="@layout/row_ticket_select_list"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="12dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/txtTotal"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:text="@string/pop_trans_payment"
+                android:textColor="#D7D7D7"
+                android:textSize="@dimen/dimen_10sp" />
+
+            <TextView
+                android:id="@+id/txtTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="#D7D7D7"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/dimen_10sp"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:text="@string/pop_trans_payment_total" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/seclayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+
+            <ImageView
+                android:id="@+id/ivCartType"
+                android:layout_width="50dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/visa"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/txtCardType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/ivCartType"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:gravity="center"
+                android:text="@string/cardname"
+                android:textAllCaps="true"
+                android:textColor="#525252"
+                android:textSize="@dimen/dimen_10sp" />
+
+            <TextView
+                android:id="@+id/txtCardNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCardType"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@+id/ivCartType"
+                android:layout_toRightOf="@+id/ivDropdown"
+                android:fontFamily="@font/helvetica_neue_regular"
+                android:text="@string/cardnub_popup"
+                android:textColor="#B0B0B0"
+                android:textSize="@dimen/dimen_10sp"
+                tools:ignore="RtlHardcoded" />
+
+            <ImageView
+                android:id="@+id/ivDropdown"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="2dp"
+                android:layout_toEndOf="@+id/txtCardNum"
+                android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/txtTotalRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:textColor="#2B2B2B"
+                android:text="@string/popup_euro"
+                android:textSize="34sp"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnFindPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/login_bg"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:gravity="center"
+            android:text="@string/pop_trans_payment_btn"
+            android:textAllCaps="false"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <TextView
+            android:id="@+id/txtCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:padding="2dp"
+            android:background="?selectableItemBackground"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:onClick="onClick"
+            android:textColor="#D0021B"
+            android:text="@string/cancel"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</layout>

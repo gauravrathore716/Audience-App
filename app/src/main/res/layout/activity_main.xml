@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.b2c.audience.MainActivity" />
+    </data>
+    <com.b2c.audience.drawerbehavior.AdvanceDrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:background="#F4F4F4"
+        android:layout_height="match_parent"
+        tools:openDrawer="start">
+
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/drawerMenu"
+            android:layout_width="match_parent"
+            android:tag="@string/tag_menu"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <include android:id="@+id/navigationItem"
+        layout="@layout/navigation_item"/>
+
+        </android.support.design.widget.NavigationView>
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:focusable="true"
+        android:tag="@string/tag_content"
+        tools:context=".MainActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbarLayout"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:elevation="0dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo"
+                    android:tint="@color/white"
+                    tools:ignore="ContentDescription" />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingStart="8dp"
+    android:paddingEnd="6dp"
+    android:layout_marginStart="12dp"
+    android:background="@drawable/main_activity_edit"
+    android:layout_marginEnd="12dp"
+    android:layout_marginTop="10dp">
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:hint="@string/search_event"
+        android:paddingStart="12dp"
+        android:gravity="center|start"
+        android:background="@null"
+        android:paddingEnd="12dp"
+        android:fontFamily="@font/helvetica_neue_medium"
+        android:textColorHint="#59FFFFFF"
+        android:textColor="#FFFFFF"
+        android:lines="1"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textSize="14sp"
+        tools:ignore="Autofill" />
+    <ImageView
+        android:id="@+id/ivClear"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:contentDescription="@string/app_name"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:onClick="onClick"
+        android:padding="6dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/cross" />
+
+</LinearLayout>
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/white"
+            app:tabIndicatorHeight="2dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/helvetica_neue_medium"
+            app:tabMode="scrollable"
+            app:tabTextColor="@color/white"
+            style="@style/AppTabLayout_Ticket"
+            app:tabTextAppearance="@style/AppTabTextAppearance_Ticket"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout"
+        android:orientation="vertical">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+    </com.b2c.audience.drawerbehavior.AdvanceDrawerLayout>
+
+</layout>

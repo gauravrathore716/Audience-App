@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:contentInsetStart="0dp"
+        android:contentInsetEnd="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <!--<TextView-->
+            <!--android:id="@+id/cancel"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:background="?selectableItemBackground"-->
+            <!--android:fontFamily="@font/helvetica_neue_medium"-->
+            <!--android:onClick="onClick"-->
+            <!--android:padding="12dp"-->
+            <!--android:text="@string/annuler"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/dimen_16sp" />-->
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="48dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="center_vertical"
+                android:background="?selectableItemBackground"
+                android:contentDescription="@string/app_name"
+                android:padding="8dp"
+                android:src="@drawable/ic_arrow_back_white_24dp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica_neue_bold"
+                android:text="@string/setting"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_22sp" />
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="@dimen/dimen_8"
+                android:background="?selectableItemBackground"
+                android:fontFamily="@font/helvetica_neue_bold"
+                android:onClick="onClick"
+                android:padding="12dp"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_12sp" />
+        </FrameLayout>
+
+    </android.support.v7.widget.Toolbar>
+</merge>

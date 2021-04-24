@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="#E70000"
+        android:gravity="center"
+        android:padding="1dp"
+        android:text="@string/canceled"
+        android:fontFamily="@font/helvetica_neue_medium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_10sp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtStatus"
+        android:backgroundTint="@color/white"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardPreventCornerOverlap="false">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:id="@+id/ivMore"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="4dp"
+                android:background="?selectableItemBackground"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_more_vert_gray_24dp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="12dp"
+                android:layout_toStartOf="@+id/ivMore"
+                android:ellipsize="end"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:text="@string/dummy_event_name"
+                android:textColor="#2D2D2D"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <TextView
+                android:id="@+id/detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:text="@string/dummy_event_detail"
+                android:textColor="#C3C3C3"
+                android:textSize="@dimen/dimen_10sp" />
+
+            <LinearLayout
+                android:id="@+id/llBtnView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/detail"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:baselineAligned="false"
+                android:gravity="start"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:id="@+id/rlBill"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ticket_bg"
+                    android:paddingLeft="@dimen/dimen_10"
+                    android:paddingRight="@dimen/dimen_10">
+
+                    <TextView
+                        android:id="@+id/txtBill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableStart="@drawable/ticket"
+                        android:drawablePadding="12dp"
+                        android:fontFamily="@font/helvetica_neue_medium"
+                        android:gravity="center"
+                        android:text="@string/txt_ticket"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/dimen_10sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlWallet"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:background="@drawable/wallet_bg">
+
+                    <TextView
+                        android:id="@+id/txtWallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableStart="@drawable/wallet"
+                        android:drawablePadding="12dp"
+                        android:fontFamily="@font/helvetica_neue_medium"
+                        android:gravity="center"
+                        android:text="@string/txt_wallet"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/dimen_10sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llBtnView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:background="?selectableItemBackground"
+                android:drawableEnd="@drawable/ic_navigate_next_blue_24dp"
+                android:drawablePadding="4dp"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:gravity="center"
+                android:text="@string/txt_send_mail"
+                android:textColor="#4A90E2"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        card_view:cardCornerRadius="4dp">
+
+        <ImageView
+            android:id="@+id/ivEvent"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dummy_event" />
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+</layout>

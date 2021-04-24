@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.b2c.audience.SignUpTwoActivity" />
+    </data>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:fitsSystemWindows="false"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp"
+            app:elevation="0dp">
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:padding="12dp"
+                android:text="@string/retour"
+                android:fontFamily="@font/helvetica_neue_regular"
+                android:textColor="#777777"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:text="@string/s_inscrire"
+                android:textColor="@color/red"
+                android:textSize="@dimen/dimen_16sp" />
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/ta_date_de_naissance"
+                    android:fontFamily="@font/helvetica_neue_regular"
+                    android:textColor="#777777"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/edit_field_bg"
+                    android:fontFamily="@font/helvetica_neue_medium"
+                    android:gravity="center_vertical"
+                    android:hint="@string/_2_juin_1996"
+                    android:onClick="onClick"
+                    android:paddingEnd="12dp"
+                    android:paddingStart="12dp"
+                    android:maxLines="1"
+                    android:textColor="@color/edit_normal"
+                    android:textColorHint="@color/edit_hint"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/choisis_un_mot_de_passe"
+                    android:fontFamily="@font/helvetica_neue_regular"
+                    android:textColor="#777777"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/edit_field_bg"
+                    android:fontFamily="@font/helvetica_neue_medium"
+                    android:hint="@string/dotsa"
+                    android:inputType="textPassword"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:maxLines="1"
+                    android:textColor="@color/edit_normal"
+                    android:textColorHint="@color/edit_hint"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/confirme_ton_mot_de_passe"
+                    android:fontFamily="@font/helvetica_neue_regular"
+                    android:textColor="#777777"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/confirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/edit_field_bg"
+                    android:fontFamily="@font/helvetica_neue_medium"
+                    android:hint="@string/dotsa"
+                    android:inputType="textPassword"
+                    android:paddingEnd="12dp"
+                    android:paddingStart="12dp"
+                    android:textColor="@color/black_80_opacity"
+                    android:textColorHint="@color/gray_C7"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="18dp">
+
+                <Switch
+                    android:id="@+id/switchbutton"
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:checked="true"
+                    android:switchMinWidth="50dp"
+                    android:theme="@style/SwitchButton"
+                    android:track="@drawable/switch_track_custom" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_12"
+                        android:fontFamily="@font/helvetica_neue_medium"
+                        android:text="@string/me_notifier_lors_de_la_publication_d_un_nouveau_document_dans_ma_classe"
+                        android:textColor="#3F3F3F"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="@dimen/dimen_12" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/login_bg"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/finih_regstrion"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtTermsCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/terms_conditions"
+            android:textColor="@color/gray_AC"
+            android:textSize="@dimen/dimen_12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

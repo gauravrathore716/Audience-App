@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical">
+
+
+            <TextView
+                android:id="@+id/row_ticket_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:gravity="center"
+                android:text="@string/pelouse_or"
+                android:textColor="#5F5F5F"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/row_ticket_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:gravity="center"
+                android:text="@string/transtion_price"
+                android:textColor="#868686"
+                android:textSize="14sp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/llBtnView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="#EFEFEF"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="3">
+
+
+            <ImageView
+                android:id="@+id/btnMinus"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/plus_minus_bg"
+                android:contentDescription="@string/app_name"
+                android:gravity="center"
+                android:padding="12dp"
+                android:src="@drawable/substract_48" />
+
+
+            <TextView
+                android:id="@+id/txtResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:gravity="center"
+                android:text="@string/_0"
+                android:textColor="#484848"
+                android:textSize="28sp" />
+
+
+            <ImageView
+                android:id="@+id/btnPlus"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/plus_minus_bg"
+                android:contentDescription="@string/app_name"
+                android:gravity="center"
+                android:padding="12dp"
+                android:src="@drawable/plus_48" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

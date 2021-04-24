@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:background="@color/white">
+
+
+            <ImageView
+                android:id="@+id/ivCard"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:padding="10dp"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:src="@drawable/master"
+                android:contentDescription="@string/app_name"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/ivCard"
+                android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtCardType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cardname"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:layout_marginStart="16dp"
+                android:textColor="#525252"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/txtCardNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cardnub"
+                android:layout_marginStart="16dp"
+                android:textColor="#B0B0B0"
+                android:textSize="@dimen/dimen_16sp"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:layout_gravity="center_vertical" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivMore"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_margin="4dp"
+                android:layout_alignParentEnd="true"
+                android:background="?selectableItemBackground"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_more_vert_gray_24dp" />
+
+
+
+            <TextView
+                android:id="@+id/txtPrinciple"
+                android:layout_width="80dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:text="@string/principale"
+                android:textAllCaps="true"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_10sp"
+                android:background="@drawable/principle" />
+
+
+</RelativeLayout>
+
+</layout>

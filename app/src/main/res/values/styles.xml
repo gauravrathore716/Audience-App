@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="SwitchButton" parent="AppTheme">
+        <item name="colorAccent">#ffffff</item>
+    </style>
+
+
+    <style name="actionbar_style" parent="Base.ThemeOverlay.AppCompat.ActionBar">
+
+    </style>
+
+    <style name="AppTabTextAppearance_Ticket" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">#ffffff</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="AppTabLayout_Ticket" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabIndicatorHeight">6dp</item>
+        <item name="tabPaddingStart">6dp</item>
+        <item name="tabPaddingEnd">6dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/AppTabTextAppearance_Ticket</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:actionModeStyle">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.FullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <!--<item name="android:windowActionBar">false</item>-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+
+    </style>
+
+    <style name="DatePickerSpinner">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+        <item name="android:colorControlNormal" tools:targetApi="lollipop">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme_AlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <!-- Used for the background -->
+        <item name="android:background">@android:color/white</item>
+    </style>
+</resources>
+    <!--Theme.AppCompat.Dialog.Alert-->

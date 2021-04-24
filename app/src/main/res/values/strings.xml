@@ -1,0 +1,220 @@
+<resources>
+    <string name="app_name">Audience</string>
+
+
+    <string name="bienvenue">Bienvenue,</string>
+    <string name="email">Email</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="mot_de_passe_oubli">Mot de passe oublié ?</string>
+    <string name="connexion">Connexion</string>
+    <string name="ou">ou</string>
+    <string name="continuer_via_facebook">Continuer via Facebook</string>
+    <string name="Inscription_par_email">Inscription par email</string>
+    <string name="forgot_password">Mot de passe oublié</string>
+    <string name="retour">Retour</string>
+    <string name="forgot_pass_des">entrez votre email et nous vous \nenverrons un lien pour retrouver \nvotrem ot de passe</string>
+    <string name="ton_email">Votre email</string>
+    <string name="hello_hello_com">hello@hello.com</string>
+    <string name="find_password">Retrouve mon mot de passe</string>
+    <string name="back_to_login">Retour à l\'accueil</string>
+    entrez votre email et nous vous enverrons un lien pour retrouver votrem ot de passe
+    <string name="name">Merci d\'indiquer votre prénom !</string>
+    <string name="enter_first_name">Merci d\'indiquer votre prénom !</string>
+    <string name="enter_last">  Merci d\'indiquer votre nom !</string>
+    <string name="enter_email">Merci d\'indiquer votre email !</string>
+    <string name="enter_vaild_email">Merci d\'indiquer un email valide !</string>
+    <string name="please_add_password">Merci d\'indiquer un mot de passe ! </string>
+    <string name="password_should8">Votre mot de passe doit comporter au moin 8 caractères !</string>
+    <string name="passwordNotMatch">Les mots de passe ne sont pas identiques !</string>
+    <string name="enter_mobile">Merci d\'indiquer votre téléphone !</string>
+    <string name="enter_mobile_valid">Merci d\'indiquer un téléphone valide !</string>
+    <string name="s_inscrire">Inscription</string>
+    <string name="choisis_une_photo_nde_profil">Choisis une photo\nde profil</string>
+    <string name="ton_pr_nom">Prénom</string>
+    <string name="julien">Votre prénom</string>
+    <string name="me_notifier_lors_de_la_publication_d_un_nouveau_document_dans_ma_classe">Me notifier lors de la publication \nd’un nouveau événement</string>
+    <string name="terms_conditions">En appuyant sur Terminer mon inscription,\n j\'accepte les <u>Condition d\' utilisation</u>, la <u>politique</u> \n<u>d\'utilisation des donnees</u> , i <u>utilisation des cookies</u> \net les <u>conditions de service</u> de Audience</string>
+
+    <string name="julien06">julien06</string>
+    <string name="nom">Nom</string>
+    <string name="annuler">Annuler</string>
+    <string name="save">Enregistrer</string>
+    <string name="_33">Votre nom</string>
+    <string name="signone">suivant</string>
+    <string name="finih_regstrion">Terminer  mon inscription</string>
+
+    <string name="ta_date_de_naissance">Votre date de naissance</string>
+    <string name="_2_juin_1996">2 juin 1996</string>
+    <string name="choisis_un_mot_de_passe">Choisissez un mot de passe</string>
+    <string name="dots">Votre mot de passe</string>
+    <string name="confirme_ton_mot_de_passe">Confirmez votre mot de passe</string>
+    <string name="choisis_un_pseudo">Choisis un pseudo</string>
+    <string name="modify_my_photo">Modifier ma photo</string>
+    <string name="my_profile">MON PROFIL</string>
+    <string name="change_password">Modifier mon mot de passe</string>
+    <string name="my_high_school">MON LYCÉE</string>
+    <string name="lyc_e_victor_hugo">Lycée Victor Hugo</string>
+    <string name="premi_re">Premiére</string>
+    <string name="settings">RÉGLAGES</string>
+    <string name="allow_notifications">Autoriser les notifications</string>
+    <string name="follow_up_publications">Suivi des publications</string>
+    <string name="follow_up_publications_des">Je serais averti de toutes nouvelles publications dans publiées dans ma classe.</string>
+    <string name="unblock_all_users">Débloquer tous les utilisateurs</string>
+    <string name="about">À PROPOS</string>
+    <string name="follow_us_fb">Nous suivre sur Facebook</string>
+    <string name="follow_us_snapchat">Nous suivre sur Snapchat</string>
+    <string name="browser_link">Voir notre site internet</string>
+    <string name="report_bug">Signaler un bug</string>
+    <string name="report_bug_subject">Bug signalé sur doKcam Android</string>
+    <string name="contact_us">Nous contacter</string>
+    <string name="contact_us_subject">Demande de contact</string>
+    <string name="terms_of_service">Conditions générales d’utilisation</string>
+    <string name="confidentiality">Confidentialité</string>
+    <string name="sign_out">Se déconnecter</string>
+    <string name="delete_account">Supprimer mon compte</string>
+    <string name="version_1_0_n_powered_by_55_agency">Version 1.0
+        \nPowered by 55 • agency</string>
+    <string name="copyright_2018_dokumeta_n_all_rights_reserved">Copyright © 2018 audience
+        \nAll rights reserved</string>
+    <string name="setting">Paramètres</string>
+    <string name="title">Mes billets</string>
+    <string name="firsttab">À venir</string>
+    <string name="sectab">passés</string>
+    <string name="old_password">ANCIEN MOT DE PASSE</string>
+    <string name="new_password">NOUVEAU MOT DE PASSE</string>
+    <string name="confirm_password">CONFIRMER LE MOT DE PASSE</string>
+    <string name="dotsa">●●●●●●●●●●</string>
+    <string name="btnChangePassword">ChangePassword</string>
+    <string name="changepassword">Enregistrer</string>
+    <string name="cancel">Annuler</string>
+    <string name="txt_ticket">Voir mon billet</string>
+    <string name="txt_wallet">Ajouter à Wallet</string>
+    <string name="txt_send_mail">Me renvoyer le billet par email</string>
+    <string name="dummy_event_name">Louane en concert</string>
+    <string name="dummy_event_detail">Palais Nikaïa\nNice (06) • Mardi 23 juin 2018 • 20h00</string>
+    <string name="my_tickets">Mes billets</string>
+    <string name="up_comming_tab">À venir</string>
+    <string name="past_tab">Passés</string>
+    <string name="canceled">Annulé</string>
+    <string name="my_transtion">Mes transactions</string>
+    <string name="transtion_price">15€</string>
+    <string name="transtion_date">Mardi 23 juin 2018 • 21h04</string>
+    <string name="transtion_valid">Transaction validée</string>
+    <string name="see_the_ticket">Voir le billet</string>
+    <string name="go_the_event">Se rendre à l’évènement</string>
+    <string name="cancelticket">Annuler le billet</string>
+    <string name="add_cb">Ajoutez une CB</string>
+    <string name="cardname">CB VISA</string>
+    <string name="cardnub">5931 3452 • • • • 4563</string>
+    <string name="cardnub_popup">5931 3452 • • • • • • • •</string>
+    <string name="principale">Principale</string>
+    <string name="payment">Paiement</string>
+    <string name="payment_menu_one">Définir come principale</string>
+    <string name="payment_menu_two">Supprimer ma CB</string>
+    <string name="mean_payment">Moyen de paiement</string>
+    <string name="txtaddcb">ajoutez une CB</string>
+    <string name="txtcbdetails">Acheter vos billets d’un simple clic\net payez vos consomations avec\nvotre mobile lors des évènement.</string>
+    <string name="cr_no">NUMÉRO DE CARTE</string>
+    <string name="cr_no_digit">0000 0000 0000 0000</string>
+
+    <string name="exp_date">DATE D’EXPIRATION</string>
+    <string name="cvvno">CRYPTOGRAMME</string>
+    <string name="cvv_digit">123</string>
+    <string name="register_cb">Enregistrer ma CB</string>
+    <string name="exp_date_digit">12 / 2020</string>
+    <string name="my_ticket_copy">louane en concert</string>
+    <string name="my_ticket_date">Mardi 23 juin 2018</string>
+    <string name="my_ticket_txt">Pelouse Or</string>
+    <string name="my_ticket_euro">54 €</string>
+    <string name="popup_euro">108€</string>
+
+    <string name="powered_by">POWERED BY</string>
+    <string name="main_title">Événements</string>
+    <string name="search_event">Rechercher un évènement</string>
+    <string name="txt_home_one">Louane en concert • Palais Nikaïa</string>
+    <string name="txt_home_two">Nice (06) • Mardi 23 juin 2018</string>
+    <string name="txt_home_three">En savoir plus</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="user_name">Martin Durant</string>
+    <string name="user_email">"martin.durant@gmail com"</string>
+    <string name="Your_tickets">Vos billets</string>
+    <string name="your_transction">Vos transactions</string>
+    <string name="navi_camera">Appareil photo</string>
+    <string name="navi_contant">V.1.0</string>
+    <string name="navi_contant_two">Powered by audience®</string>
+    <string name="navi_contant_three">All rights reserved</string>
+
+    <string name="ok">OK</string>
+
+    <string name="grant_permission">Grant Permission</string>
+    <string name="permission_camera">This app needs camera permission to scan barcode</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="title_activity_main">Barcode Reader Sample</string>
+    <string name="barcode_header">Click &quot;Read Barcode&quot; to read a barcode</string>
+    <string name="read_barcode">Read Barcode</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="barcode_success">Barcode read successfully</string>
+    <string name="barcode_failure">No barcode captured</string>
+    <string name="barcode_error">"Error reading barcode: %1$s"</string>
+    <string name="grant">GRANT</string>
+    <string name="event_title">louane en concert</string>
+    <string name="event_loction">Palais Nikaia- Nice(06)</string>
+    <string name="event_demo">"Louane est une chanteuse et actrice française née en 1996 dans le \nNord de la France.
+    \nAprès avoir participé en 2013 à l\'émission The Voice et avoir été \njusqu\'en demi-finale, on la retrouve l'année suivante en tant \nqu'actrice dans le film "La Famille Bélier" grâce à son rôle de Paula \nBélier, qui lui vaut le César du meilleur espoir féminin en 2015"</string>
+
+
+    <string name="choose_option">Choisi une option</string>
+    <string name="use_camera">Utilise la caméra</string>
+    <string name="open_gallery">Ouvre la galerie</string>
+    <string name="pick_image_intent_chooser_title">Select source</string>
+    <string name="crop_image_activity_no_permissions">Cancelling, required permissions are not granted</string>
+    <string name="pop_up_text_one">Louane en concert</string>
+    <string name="pop_up_text_two">Mardi 23 juin 2018 • Palais Nikaïa - Nice (06)</string>
+    <string name="details_time">Le 23 juin 2018  •  20h00</string>
+    <string name="details_city">Palais Nikaïa</string>
+    <string name="details_city_">28, chemin de Alvéolles 06000 Nice</string>
+    <string name="details_city_logo">Nice</string>
+    <string name="details_city_head">À propos</string>
+    <string name="details_btn">Lire plus</string>
+    <string name="details_bills_list">Billets</string>
+    <string name="details_bills_btn">Acheter maintenant</string>
+    <string name="details_bills_list_item">Pelouse Or</string>
+    <string name="pop_trans_payment">MOYEN DE PAIEMENT</string>
+    <string name="pop_trans_payment_total">TOTAL TTC</string>
+    <string name="pop_trans_payment_btn">Confirmer la commande</string>
+    <string name="pelouse_or">Pelouse Or</string>
+    <string name="_0">0</string>
+
+
+    <string name="firstname">entrez votre prénom</string>
+    <string name="name_last">entrez votre</string>
+    <string name="dob">entrer date de naissance</string>
+    <string name="password">veuillez entrer le mot de passe</string>
+    <string name="conn_password">veuillez entrer votre mot de passe</string>
+    <string name="please_select_profile_image">Choisis l\'image du profil</string>
+    <string name="btn_ok">OK</string>
+    <string name="no_network_message">Merci de vérifier votre connexion internet.</string>
+    <string name="no_internet">No Internet</string>
+    <string name="msg_please_wait">Merci de bien vouloir patienter…</string>
+    <string name="default_error">Oups ! Une erreur s\'est produite !</string>
+
+    <string name="txt_attention">Alerte !</string>
+    <string name="alert_want_to_logout">Êtes vous certain de vouloir vous déconnecter?</string>
+    <string name="btn_cancel">Non</string>
+    <string name="btn_confirm">Oui</string>
+    <string name="please_enter_pass">Merci d\'indiquer un mot de passe !</string>
+    <string name="please_enter_pass_length">Votre mot de passe doit comporter au moins 8 caractères !</string>
+    <string name="please_enter_new_pass">Merci d\'indiquer un mot de passe !</string>
+    <string name="please_enter_both_pass_same">Les mots de passe ne sont pas identiques !</string>
+
+
+
+
+
+
+
+</resources>

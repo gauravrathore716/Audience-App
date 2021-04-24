@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.b2c.audience.MyTicketsActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4F4F4"
+        android:orientation="vertical">
+
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:elevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/helvetica_neue_medium"
+                        android:text="@string/my_tickets"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+
+            </android.support.v7.widget.Toolbar>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                app:tabIndicatorColor="@color/white"
+                app:tabIndicatorHeight="2dp"
+                style="@style/AppTabLayout_Ticket"
+                app:tabTextAppearance="@style/AppTabTextAppearance_Ticket">
+
+                <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/helvetica_neue_medium"
+                    android:text="@string/up_comming_tab" />
+
+                <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/helvetica_neue_medium"
+                    android:text="@string/past_tab" />
+            </android.support.design.widget.TabLayout>
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>
+
+</layout>

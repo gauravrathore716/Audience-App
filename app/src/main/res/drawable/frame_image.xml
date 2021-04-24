@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <padding android:left="6dp"
+        android:top="6dp"
+        android:right="6dp"
+        android:bottom="6dp" tools:ignore="StateListReachable" />
+
+
+    <stroke android:width="6dp" android:color="#ffffffff" />
+
+</shape>

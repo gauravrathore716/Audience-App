@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:orientation="vertical">
+
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:gravity="center"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="6dp"
+       android:layout_marginEnd="6dp"
+       tools:ignore="UselessParent">
+
+
+    <TextView
+        android:id="@+id/row_ticket_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/details_bills_list_item"
+        android:fontFamily="@font/helvetica_neue_medium"
+        android:textSize="14sp"
+        android:textColor="#6E6E6E"
+        android:gravity="center"/>
+
+
+    <TextView
+        android:id="@+id/row_ticket_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/transtion_price"
+        android:textSize="14sp"
+        android:textColor="#C6C6C6"
+        android:fontFamily="@font/helvetica_neue_medium"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"/>
+
+   </RelativeLayout>
+
+
+</LinearLayout>
+</layout>
